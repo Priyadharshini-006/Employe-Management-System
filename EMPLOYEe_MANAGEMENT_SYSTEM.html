@@ -22,6 +22,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
 .fw7{font-weight:700}.fw6{font-weight:600}.fz12{font-size:12px}.fz11{font-size:11px}
 .mono{font-family:'Courier New',monospace}
 .hidden{display:none!important}
+
 /* LOGIN */
 #loginWrap{min-height:100vh;display:flex;align-items:center;justify-content:center;
   background:radial-gradient(ellipse 70% 60% at 20% 30%,rgba(59,130,246,0.12) 0%,transparent 60%),
@@ -53,6 +54,7 @@ select.finput option{background:var(--bg2)}
 .err-msg{background:rgba(220,38,38,0.12);border:1px solid rgba(220,38,38,0.3);color:#f87171;border-radius:var(--r2);padding:8px 12px;font-size:12px;margin-bottom:12px}
 .demo-box{background:var(--bg3);border:1px solid var(--bdr);border-radius:var(--r2);padding:12px;margin-top:14px;font-size:12px;color:var(--dim);line-height:1.8}
 .demo-box b{color:var(--blue)}
+
 /* APP */
 #appWrap{display:none;min-height:100vh}
 .layout{display:flex;min-height:100vh}
@@ -86,6 +88,7 @@ select.finput option{background:var(--bg2)}
 .searchbar input::placeholder{color:var(--muted)}
 .content{flex:1;padding:22px;background:var(--bg)}
 .page{display:none}.page.on{display:block}
+
 /* STATS */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
 .stat{background:var(--bg1);border:1px solid var(--bdr);border-radius:var(--r);padding:18px;position:relative;overflow:hidden}
@@ -100,6 +103,7 @@ select.finput option{background:var(--bg2)}
 .sec-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
 .sec-title{font-size:14px;font-weight:700}
 .sec-sub{font-size:12px;color:var(--muted);margin-top:2px}
+
 /* TABLE */
 .twrap{background:var(--bg1);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden}
 .ttoolbar{display:flex;align-items:center;gap:6px;padding:12px 14px;border-bottom:1px solid var(--bdr);flex-wrap:wrap}
@@ -125,6 +129,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
 .empty-msg{font-size:13px;font-weight:600;color:var(--dim)}
 .bulk-bar{display:none;align-items:center;gap:10px;padding:10px 14px;background:var(--blue-g);border-bottom:1px solid var(--bdr-b);font-size:12px;color:var(--blue)}
 .bulk-bar.on{display:flex}
+
 /* OVERLAY */
 .overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:200;align-items:center;justify-content:center;padding:20px}
 .overlay.on{display:flex}
@@ -187,6 +192,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
 .toast{display:flex;align-items:center;gap:10px;background:var(--bg1);border:1px solid var(--bdr);border-radius:var(--r2);padding:10px 16px;font-size:12px;min-width:220px;box-shadow:0 8px 32px rgba(0,0,0,.5);animation:tf .2s}
 @keyframes tf{from{opacity:0;transform:translateY(8px)}}
 .toast.s{border-left:3px solid #4ade80}.toast.e{border-left:3px solid #f87171}.toast.i{border-left:3px solid var(--blue)}
+
 /* ===== REPORTS ===== */
 .r-kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
 .r-kpi{background:var(--bg1);border:1px solid var(--bdr);border-radius:var(--r);padding:16px;position:relative;overflow:hidden;display:flex;align-items:center;gap:14px}
@@ -235,9 +241,11 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
 .r-earner-sal{font-size:12px;font-weight:700;font-family:'Courier New',monospace;color:var(--blue)}
 .r-line-leg-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--dim)}
 .r-line-leg-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+
 </style>
 </head>
 <body>
+
 <!-- LOGIN -->
 <div id="loginWrap">
   <div class="login-box">
@@ -270,6 +278,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
     </div>
   </div>
 </div>
+
 <!-- APP -->
 <div id="appWrap">
 <div class="layout">
@@ -318,6 +327,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
       <button class="btn btn-blue btn-sm" id="addBtn" onclick="openAdd()" style="display:none">+ Add Employee</button>
     </div>
     <div class="content">
+
       <!-- DASHBOARD -->
       <div class="page on" id="pg-dashboard">
         <div class="stats" id="statsGrid"></div>
@@ -333,6 +343,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
           <div id="recentList"></div>
         </div>
       </div>
+
       <!-- EMPLOYEES -->
       <div class="page" id="pg-employees">
         <div class="sec-hdr">
@@ -367,6 +378,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
           </div>
         </div>
       </div>
+
       <!-- ATTENDANCE -->
       <div class="page" id="pg-attendance">
         <div class="sec-hdr">
@@ -384,6 +396,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
           </table>
         </div>
       </div>
+
       <!-- LEAVES -->
       <div class="page" id="pg-leaves">
         <div class="sec-hdr"><div class="sec-title">Leave Management</div></div>
@@ -414,6 +427,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
         </div>
         <div class="tc" id="ltc-hist"><div id="lvHistList"></div></div>
       </div>
+
       <!-- PAYROLL -->
       <div class="page" id="pg-payroll">
         <div class="sec-hdr">
@@ -432,6 +446,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
           </table>
         </div>
       </div>
+
       <!-- REPORTS -->
       <div class="page" id="pg-reports">
         <!-- KPI Row -->
@@ -474,6 +489,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
           </div>
         </div>
       </div>
+
       <!-- SETTINGS -->
       <div class="page" id="pg-settings">
         <div class="sec-title" style="margin-bottom:16px">Settings</div>
@@ -499,6 +515,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
           </div>
         </div>
       </div>
+
       <!-- MY PROFILE -->
       <div class="page" id="pg-myprofile"><div id="myProfC"></div></div>
       <!-- MY SALARY -->
@@ -508,6 +525,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
   </div>
 </div>
 </div>
+
 <!-- EMPLOYEE MODAL -->
 <div class="overlay" id="empOv">
   <div class="modal">
@@ -1367,6 +1385,7 @@ function renderReports(){
     const col=COLS[i%COLS.length];
     return `<div style="flex:1;text-align:center;font-size:9px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0" title="${d}"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${col};margin-right:3px;vertical-align:middle"></span>${d.slice(0,6)}</div>`;
   }).join('');
+
   // ---- LINE CHART (canvas) ----
   const lineCanvas=document.getElementById('rLineCanvas');
   const lw=lineCanvas.parentElement.offsetWidth||700, lh=180;
@@ -1412,6 +1431,7 @@ function renderReports(){
     });
   }
   document.getElementById('rLineLegend').innerHTML=depts.map((d,i)=>`<div class="r-line-leg-item"><div class="r-line-leg-dot" style="background:${COLS[i%COLS.length]}"></div>${d}</div>`).join('');
+
   // ---- SALARY RANGE BARS ----
   const rng={'<40K':0,'40-60K':0,'60-80K':0,'80-100K':0,'>100K':0};
   const rngCols={'<40K':'#38bdf8','40-60K':'#3b82f6','60-80K':'#a78bfa','80-100K':'#ec4899','>100K':'#f97316'};
@@ -1427,6 +1447,7 @@ function renderReports(){
       <div style="font-size:11px;font-weight:700;font-family:'Courier New',monospace;color:${col};width:16px;text-align:right">${v}</div>
     </div>`;
   }).join('');
+
   // ---- TOP EARNERS ----
   const top=[...emps].sort((a,b)=>(+b.sal)-(+a.sal)).slice(0,5);
   const medals=['🥇','🥈','🥉','4','5'];
@@ -1441,6 +1462,7 @@ function renderReports(){
       <div class="r-earner-sal">₹${(+e.sal).toLocaleString()}</div>
     </div>`).join('');
 }
+
 // ======= SETTINGS =======
 function renderSett(){
   const s=DB.get('sett')||{};
@@ -1454,6 +1476,7 @@ function saveSett(){DB.set('sett',{comp:document.getElementById('sComp').value,i
 function addDept(){const v=document.getElementById('newDept').value.trim();if(!v)return;const d=DB.get('depts')||[];if(d.includes(v)){toast('Already exists','e');return;}d.push(v);DB.set('depts',d);document.getElementById('newDept').value='';renderSett();toast('Added','s');}
 function delDept(i){const d=DB.get('depts')||[];d.splice(i,1);DB.set('depts',d);renderSett();toast('Removed','s');}
 function resetData(){confirm2('Reset ALL data? Cannot be undone.',()=>{['emps','depts','leaves','att','pay','sett','ctr','data_ver'].forEach(k=>DB.del(k));initDB();renderDash();toast('Reset done','i');});}
+
 // ======= MY PROFILE / SALARY =======
 function renderMyProf(){
   if(CR!=='employee')return;
@@ -1473,10 +1496,12 @@ function renderMySal(){
   if(CR!=='employee')return;
   document.getElementById('mySalC').innerHTML=`<div class="card"><div class="card-title">Salary Breakdown</div>${salBreak(CU)}</div>`;
 }
+
 // ======= EXPORT =======
 function exportCSV(){const e=getEmps();const h=['ID','First','Last','Dept','Position','Salary','Status','Joined','Email','Phone'];const r=e.map(x=>[x.id,x.fn,x.ln,x.dept,x.pos,x.sal,x.stat,x.joined,x.email,x.phone]);dl('employees.csv',[h,...r].map(row=>row.map(v=>`"${v||''}"`).join(',')).join('\n'));toast('Exported','s');}
 function exportPayCSV(){const e=DB.get('emps')||[];const h=['ID','Name','Base','Net'];const r=e.map(x=>[x.id,`${x.fn} ${x.ln}`,x.sal,+x.sal+Math.round(+x.sal*.4)-Math.round(+x.sal*.17)+Math.round(+x.sal*.05)]);dl('payroll.csv',[h,...r].map(row=>row.map(v=>`"${v||''}"`).join(',')).join('\n'));toast('Exported','s');}
 function dl(n,c){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([c],{type:'text/csv'}));a.download=n;a.click();}
+
 // ======= MODAL HELPERS =======
 function openOv(id){document.getElementById(id).classList.add('on');}
 function closeOv(id){document.getElementById(id).classList.remove('on');}
@@ -1484,8 +1509,10 @@ document.querySelectorAll('.overlay').forEach(o=>o.addEventListener('click',e=>{
 function confirm2(msg,cb){document.getElementById('confMsg').textContent=msg;document.getElementById('confOk').onclick=()=>{closeOv('confOv');cb();};openOv('confOv');}
 function askDel(id){const e=(DB.get('emps')||[]).find(x=>x.id===id);if(!e)return;confirm2(`Delete ${e.fn} ${e.ln}?`,()=>{DB.set('emps',(DB.get('emps')||[]).filter(x=>x.id!==id));renderEmpTable();renderDash();toast('Deleted','s');});}
 function switchET(t,tid){document.querySelectorAll('#empOv .tc').forEach(x=>x.classList.remove('on'));document.querySelectorAll('#empOv .tab').forEach(x=>x.classList.remove('on'));document.getElementById('etc-'+t)?.classList.add('on');document.getElementById(tid)?.classList.add('on');}
+
 // ======= TOAST =======
 function toast(msg,type='i'){const icons={s:'✅',e:'❌',i:'ℹ️'};const el=document.createElement('div');el.className=`toast ${type}`;el.innerHTML=`<span>${icons[type]||'ℹ️'}</span><span>${msg}</span>`;document.getElementById('toasts').appendChild(el);setTimeout(()=>el.remove(),3000);}
+
 // ======= INIT =======
 window.addEventListener('load', () => {
   const now = new Date();
