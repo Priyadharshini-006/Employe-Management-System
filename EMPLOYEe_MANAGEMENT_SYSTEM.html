@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EMS Pro</title>
+<title>EMP Software</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -22,7 +22,6 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
 .fw7{font-weight:700}.fw6{font-weight:600}.fz12{font-size:12px}.fz11{font-size:11px}
 .mono{font-family:'Courier New',monospace}
 .hidden{display:none!important}
-
 /* LOGIN */
 #loginWrap{min-height:100vh;display:flex;align-items:center;justify-content:center;
   background:radial-gradient(ellipse 70% 60% at 20% 30%,rgba(59,130,246,0.12) 0%,transparent 60%),
@@ -54,7 +53,6 @@ select.finput option{background:var(--bg2)}
 .err-msg{background:rgba(220,38,38,0.12);border:1px solid rgba(220,38,38,0.3);color:#f87171;border-radius:var(--r2);padding:8px 12px;font-size:12px;margin-bottom:12px}
 .demo-box{background:var(--bg3);border:1px solid var(--bdr);border-radius:var(--r2);padding:12px;margin-top:14px;font-size:12px;color:var(--dim);line-height:1.8}
 .demo-box b{color:var(--blue)}
-
 /* APP */
 #appWrap{display:none;min-height:100vh}
 .layout{display:flex;min-height:100vh}
@@ -88,7 +86,6 @@ select.finput option{background:var(--bg2)}
 .searchbar input::placeholder{color:var(--muted)}
 .content{flex:1;padding:22px;background:var(--bg)}
 .page{display:none}.page.on{display:block}
-
 /* STATS */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
 .stat{background:var(--bg1);border:1px solid var(--bdr);border-radius:var(--r);padding:18px;position:relative;overflow:hidden}
@@ -103,7 +100,6 @@ select.finput option{background:var(--bg2)}
 .sec-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
 .sec-title{font-size:14px;font-weight:700}
 .sec-sub{font-size:12px;color:var(--muted);margin-top:2px}
-
 /* TABLE */
 .twrap{background:var(--bg1);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden}
 .ttoolbar{display:flex;align-items:center;gap:6px;padding:12px 14px;border-bottom:1px solid var(--bdr);flex-wrap:wrap}
@@ -129,7 +125,6 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
 .empty-msg{font-size:13px;font-weight:600;color:var(--dim)}
 .bulk-bar{display:none;align-items:center;gap:10px;padding:10px 14px;background:var(--blue-g);border-bottom:1px solid var(--bdr-b);font-size:12px;color:var(--blue)}
 .bulk-bar.on{display:flex}
-
 /* OVERLAY */
 .overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:200;align-items:center;justify-content:center;padding:20px}
 .overlay.on{display:flex}
@@ -192,7 +187,6 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
 .toast{display:flex;align-items:center;gap:10px;background:var(--bg1);border:1px solid var(--bdr);border-radius:var(--r2);padding:10px 16px;font-size:12px;min-width:220px;box-shadow:0 8px 32px rgba(0,0,0,.5);animation:tf .2s}
 @keyframes tf{from{opacity:0;transform:translateY(8px)}}
 .toast.s{border-left:3px solid #4ade80}.toast.e{border-left:3px solid #f87171}.toast.i{border-left:3px solid var(--blue)}
-
 /* ===== REPORTS ===== */
 .r-kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
 .r-kpi{background:var(--bg1);border:1px solid var(--bdr);border-radius:var(--r);padding:16px;position:relative;overflow:hidden;display:flex;align-items:center;gap:14px}
@@ -241,18 +235,16 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
 .r-earner-sal{font-size:12px;font-weight:700;font-family:'Courier New',monospace;color:var(--blue)}
 .r-line-leg-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--dim)}
 .r-line-leg-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-
 </style>
 </head>
 <body>
-
 <!-- LOGIN -->
 <div id="loginWrap">
   <div class="login-box">
     <div class="login-logo">
       <div class="logo-ico">👥</div>
       <div>
-        <div class="logo-name">EMS<span>Pro</span></div>
+        <div class="logo-name">EMP<span>Software</span></div>
         <div class="logo-sub">Employee Management</div>
       </div>
     </div>
@@ -278,7 +270,6 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
     </div>
   </div>
 </div>
-
 <!-- APP -->
 <div id="appWrap">
 <div class="layout">
@@ -286,7 +277,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
     <div class="s-logo">
       <div class="s-logo-ico">👥</div>
       <div>
-        <div class="s-logo-txt">EMS<span>Pro</span></div>
+        <div class="s-logo-txt">EMP<span>Software</span></div>
         <div class="s-logo-sub">System</div>
       </div>
     </div>
@@ -327,7 +318,6 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
       <button class="btn btn-blue btn-sm" id="addBtn" onclick="openAdd()" style="display:none">+ Add Employee</button>
     </div>
     <div class="content">
-
       <!-- DASHBOARD -->
       <div class="page on" id="pg-dashboard">
         <div class="stats" id="statsGrid"></div>
@@ -343,7 +333,6 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
           <div id="recentList"></div>
         </div>
       </div>
-
       <!-- EMPLOYEES -->
       <div class="page" id="pg-employees">
         <div class="sec-hdr">
@@ -378,7 +367,6 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
           </div>
         </div>
       </div>
-
       <!-- ATTENDANCE -->
       <div class="page" id="pg-attendance">
         <div class="sec-hdr">
@@ -396,7 +384,6 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
           </table>
         </div>
       </div>
-
       <!-- LEAVES -->
       <div class="page" id="pg-leaves">
         <div class="sec-hdr"><div class="sec-title">Leave Management</div></div>
@@ -407,7 +394,7 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
         </div>
         <div class="tabs">
           <div class="tab on" id="lt1" onclick="switchLTab('req','lt1')">Requests</div>
-          <div class="tab" id="lt2" onclick="switchLTab('apply','lt2')">Apply</div>
+          <div class="tab hidden" id="lt2" onclick="switchLTab('apply','lt2')">Apply</div>
           <div class="tab" id="lt3" onclick="switchLTab('hist','lt3')">History</div>
         </div>
         <div class="tc on" id="ltc-req"><div id="lvReqList"></div></div>
@@ -427,18 +414,12 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
         </div>
         <div class="tc" id="ltc-hist"><div id="lvHistList"></div></div>
       </div>
-
       <!-- PAYROLL -->
       <div class="page" id="pg-payroll">
         <div class="sec-hdr">
           <div class="sec-title">Payroll</div>
           <div class="flex gap8">
-            <select class="finput" id="payMonth" style="width:auto" onchange="renderPayroll()">
-              <option>Jan 2025</option><option>Feb 2025</option><option>Mar 2025</option>
-              <option>Apr 2025</option><option>May 2025</option><option>Jun 2025</option>
-              <option selected>Jul 2025</option><option>Aug 2025</option><option>Sep 2025</option>
-              <option>Oct 2025</option><option>Nov 2025</option><option>Dec 2025</option>
-            </select>
+            <select class="finput" id="payMonth" style="width:auto" onchange="renderPayroll()"></select>
             <button class="btn btn-ghost btn-sm" onclick="exportPayCSV()">⬇ Export</button>
           </div>
         </div>
@@ -451,7 +432,6 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
           </table>
         </div>
       </div>
-
       <!-- REPORTS -->
       <div class="page" id="pg-reports">
         <!-- KPI Row -->
@@ -494,7 +474,6 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
           </div>
         </div>
       </div>
-
       <!-- SETTINGS -->
       <div class="page" id="pg-settings">
         <div class="sec-title" style="margin-bottom:16px">Settings</div>
@@ -520,7 +499,6 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
           </div>
         </div>
       </div>
-
       <!-- MY PROFILE -->
       <div class="page" id="pg-myprofile"><div id="myProfC"></div></div>
       <!-- MY SALARY -->
@@ -530,7 +508,6 @@ tr:hover td{background:rgba(255,255,255,0.02);color:var(--text)}
   </div>
 </div>
 </div>
-
 <!-- EMPLOYEE MODAL -->
 <div class="overlay" id="empOv">
   <div class="modal">
@@ -631,24 +608,30 @@ const DB = {
 };
 
 const SEED=[
-  {id:'emp001',fn:'Arjun',ln:'Sharma',dept:'Engineering',pos:'Senior Engineer',sal:95000,stat:'Active',joined:'2022-03-15',email:'arjun@corp.com',phone:'+91 9876543210',gen:'Male',nat:'Indian',type:'Full-time',skills:'React, Node.js, Python',dob:'1990-05-20',addr:'12 Marine Drive',city:'Mumbai',state:'Maharashtra',emerg:'Priya - 9876543211',pass:'pass123'},
-  {id:'emp002',fn:'Priya',ln:'Mehta',dept:'HR',pos:'HR Manager',sal:75000,stat:'Active',joined:'2021-07-01',email:'priya@corp.com',phone:'+91 9876543220',gen:'Female',nat:'Indian',type:'Full-time',skills:'Recruitment, Training',dob:'1988-11-15',addr:'34 Juhu',city:'Mumbai',state:'Maharashtra',emerg:'Raj - 9876543221',pass:'pass123'},
-  {id:'emp003',fn:'Rohan',ln:'Patel',dept:'Marketing',pos:'Marketing Lead',sal:80000,stat:'Active',joined:'2023-01-10',email:'rohan@corp.com',phone:'+91 9876543230',gen:'Male',nat:'Indian',type:'Full-time',skills:'SEO, Analytics',dob:'1993-02-28',addr:'56 Bandra',city:'Mumbai',state:'Maharashtra',emerg:'Anita - 9876543231',pass:'pass123'},
-  {id:'emp004',fn:'Sneha',ln:'Gupta',dept:'Design',pos:'UI/UX Designer',sal:70000,stat:'On Leave',joined:'2022-09-05',email:'sneha@corp.com',phone:'+91 9876543240',gen:'Female',nat:'Indian',type:'Full-time',skills:'Figma, Sketch',dob:'1995-07-12',addr:'78 Powai',city:'Mumbai',state:'Maharashtra',emerg:'Dev - 9876543241',pass:'pass123'},
-  {id:'emp005',fn:'Vikram',ln:'Singh',dept:'Sales',pos:'Sales Executive',sal:60000,stat:'Active',joined:'2023-06-20',email:'vikram@corp.com',phone:'+91 9876543250',gen:'Male',nat:'Indian',type:'Full-time',skills:'CRM, B2B Sales',dob:'1991-09-30',addr:'90 Andheri',city:'Mumbai',state:'Maharashtra',emerg:'Kavita - 9876543251',pass:'pass123'},
-  {id:'emp006',fn:'Kavya',ln:'Nair',dept:'Finance',pos:'Finance Analyst',sal:85000,stat:'Active',joined:'2020-11-15',email:'kavya@corp.com',phone:'+91 9876543260',gen:'Female',nat:'Indian',type:'Full-time',skills:'Excel, SAP',dob:'1989-04-05',addr:'12 Thane',city:'Thane',state:'Maharashtra',emerg:'Anil - 9876543261',pass:'pass123'},
-  {id:'emp007',fn:'Aditya',ln:'Kumar',dept:'Engineering',pos:'DevOps Engineer',sal:90000,stat:'Active',joined:'2021-04-12',email:'aditya@corp.com',phone:'+91 9876543270',gen:'Male',nat:'Indian',type:'Full-time',skills:'Docker, AWS',dob:'1992-12-18',addr:'34 Thane',city:'Thane',state:'Maharashtra',emerg:'Ritu - 9876543271',pass:'pass123'},
-  {id:'emp008',fn:'Divya',ln:'Joshi',dept:'Marketing',pos:'Content Manager',sal:55000,stat:'Inactive',joined:'2022-05-01',email:'divya@corp.com',phone:'+91 9876543280',gen:'Female',nat:'Indian',type:'Contract',skills:'Copywriting',dob:'1996-08-22',addr:'56 Navi Mumbai',city:'Navi Mumbai',state:'Maharashtra',emerg:'Suresh - 9876543281',pass:'pass123'},
+  {id:'emp001',fn:'Priyadharshini',ln:'S',dept:'Engineering',pos:'Senior Engineer',sal:95000,stat:'Active',joined:'2022-03-15',email:'priyadharshini@corp.com',phone:'+91 9791408891',gen:'Female',nat:'Indian',type:'Full-time',skills:'React, Node.js, Python',dob:'2005-07-13',addr:'12 Marine Drive',city:'Thiruvallur',state:'TamilNadu',emerg:'Rajesh - 9025461022',pass:'pass123'},
+  {id:'emp002',fn:'Tamilselvi',ln:'M',dept:'HR',pos:'HR Manager',sal:75000,stat:'Active',joined:'2021-07-01',email:'tamilselvi@corp.com',phone:'+91 8939267582',gen:'Female',nat:'Indian',type:'Full-time',skills:'Recruitment, Training',dob:'2006-01-06',addr:'34 Juhu',city:'Thiruvallur',state:'TamilNadu',emerg:'Amma - 9876543221',pass:'pass123'},
+  {id:'emp003',fn:'Rajesh',ln:'S',dept:'Marketing',pos:'Marketing Lead',sal:80000,stat:'Active',joined:'2023-01-10',email:'rajesh@corp.com',phone:'+91 9025461022',gen:'Male',nat:'Indian',type:'Full-time',skills:'SEO, Analytics',dob:'2006-02-18',addr:'56 Bandra',city:'Thiruvallur',state:'TamilNadu',emerg:'Priyadharshini - 9876543231',pass:'pass123'},
+  {id:'emp004',fn:'Lokesh',ln:'N',dept:'Design',pos:'UI/UX Designer',sal:70000,stat:'On Leave',joined:'2022-09-05',email:'lokesh@corp.com',phone:'+91 6374231674',gen:'Male',nat:'Indian',type:'Full-time',skills:'Figma, Sketch',dob:'2006-04-28',addr:'78 Powai',city:'Thiruvallur',state:'TamilNadu',emerg:'Anna - 9876543241',pass:'pass123'},
+  {id:'emp005',fn:'Chandru',ln:'V',dept:'Sales',pos:'Sales Executive',sal:60000,stat:'Active',joined:'2023-06-20',email:'chandru@corp.com',phone:'+91 9345278056',gen:'Male',nat:'Indian',type:'Full-time',skills:'CRM, B2B Sales',dob:'2005-12-10',addr:'90 Andheri',city:'Thiruvallur',state:'TamilNadu',emerg:'Kaviya - 9876543251',pass:'pass123'},
+  {id:'emp006',fn:'Vennila',ln:'K',dept:'Finance',pos:'Finance Analyst',sal:85000,stat:'Active',joined:'2020-11-15',email:'vennila@corp.com',phone:'+91 8610573801',gen:'Female',nat:'Indian',type:'Full-time',skills:'Excel, SAP',dob:'2006-04-04',addr:'12 Thane',city:'Thiruvallur',state:'TamilNadu',emerg:'Akash - 9876543261',pass:'pass123'},
+  {id:'emp007',fn:'Vedha',ln:'Vali',dept:'Engineering',pos:'DevOps Engineer',sal:90000,stat:'Active',joined:'2021-04-12',email:'vedha@corp.com',phone:'+91 9025677873',gen:'Female',nat:'Indian',type:'Full-time',skills:'Docker, AWS',dob:'1992-12-18',addr:'34 Thane',city:'Thiruvallur',state:'TamilNadu',emerg:'Uines - 9876543271',pass:'pass123'},
+  {id:'emp008',fn:'Vicky',ln:'S',dept:'Marketing',pos:'Content Manager',sal:55000,stat:'Inactive',joined:'2022-05-01',email:'vicky@corp.com',phone:'+91 9952473630',gen:'Male',nat:'Indian',type:'Contract',skills:'Copywriting',dob:'2007-01-01',addr:'56 Navi Mumbai',city:'Thiruvallur',state:'TamilNadu',emerg:'Amma - 9876543281',pass:'pass123'},
 ];
 
 function initDB(){
-  if(!DB.get('emps')) DB.set('emps',SEED);
-  if(!DB.get('depts')) DB.set('depts',['Engineering','Marketing','HR','Sales','Finance','Operations','Design']);
-  if(!DB.get('leaves')) DB.set('leaves',[]);
-  if(!DB.get('att')) DB.set('att',{});
-  if(!DB.get('pay')) DB.set('pay',{});
-  if(!DB.get('sett')) DB.set('sett',{comp:'TechCorp',ind:'Technology',eml:'hr@techcorp.com'});
-  if(!DB.get('ctr')) DB.set('ctr',9);
+  // Never wipe existing data — only seed if a key is truly missing from localStorage
+  if(!DB.get('emps'))   DB.set('emps',   SEED);
+  if(!DB.get('depts'))  DB.set('depts',  ['Engineering','Marketing','HR','Sales','Finance','Operations','Design']);
+  if(!DB.get('leaves')) DB.set('leaves', []);
+  if(!DB.get('att'))    DB.set('att',    {});
+  if(!DB.get('pay'))    DB.set('pay',    {});
+  if(!DB.get('ctr'))    DB.set('ctr',    9);
+  // Always ensure company name is EMP Software (overwrite old cached value)
+  const sett = DB.get('sett') || {};
+  if(!sett.comp || sett.comp === 'TechCorp') sett.comp = 'EMP Software';
+  if(!sett.ind)  sett.ind  = 'Technology';
+  if(!sett.eml)  sett.eml  = 'hr@techcorp.com';
+  DB.set('sett', sett);
 }
 initDB();
 
@@ -928,54 +911,269 @@ function salBreak(e){
 }
 
 // ======= ATTENDANCE =======
+
+// Returns true if employee has an approved leave covering the given date string (YYYY-MM-DD)
+function isApprovedLeaveDate(empId, dateStr){
+  const leaves = DB.get('leaves') || [];
+  return leaves.some(l =>
+    l.empId === empId &&
+    l.status === 'Approved' &&
+    dateStr >= l.from &&
+    dateStr <= l.to
+  );
+}
+
+// Sync attendance: for every approved leave, stamp all its dates as 'L' in att
+// Called on renderAtt so the grid is always consistent even after page reload
+function syncApprovedLeavesToAtt(){
+  const leaves = DB.get('leaves') || [];
+  const att = DB.get('att') || {};
+  let changed = false;
+  leaves.filter(l => l.status === 'Approved').forEach(l => {
+    if(!att[l.empId]) att[l.empId] = {};
+    const from = new Date(l.from), to = new Date(l.to);
+    for(let d = new Date(from); d <= to; d.setDate(d.getDate()+1)){
+      const key = d.toISOString().split('T')[0];
+      // Only overwrite if not already L (avoid repeated writes)
+      if(att[l.empId][key] !== 'L'){ att[l.empId][key] = 'L'; changed = true; }
+    }
+  });
+  if(changed) DB.set('att', att);
+  return att;
+}
+
 function renderAtt(){
   const el=document.getElementById('attMonth');
   if(!el.value){const d=new Date();el.value=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;}
   const[yr,mo]=el.value.split('-').map(Number), days=new Date(yr,mo,0).getDate();
-  const att=DB.get('att')||{}, today=new Date().toISOString().split('T')[0];
+  // Sync approved leaves into attendance before rendering
+  const att = syncApprovedLeavesToAtt();
+  const today=new Date().toISOString().split('T')[0];
+  const onApprovedLeaveToday = (empId) => isApprovedLeaveDate(empId, today);
+
   document.getElementById('attBody').innerHTML=(DB.get('emps')||[]).map(e=>{
     let P=0,A=0,L=0;
-    for(let d=1;d<=days;d++){const k=`${yr}-${String(mo).padStart(2,'0')}-${String(d).padStart(2,'0')}`;const s=(att[e.id]||{})[k];if(s==='P')P++;else if(s==='A')A++;else if(s==='L')L++;}
-    const pct=days?Math.round(P/days*100):0, ts=(att[e.id]||{})[today]||null;
+    for(let d=1;d<=days;d++){
+      const k=`${yr}-${String(mo).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+      const s=(att[e.id]||{})[k];
+      if(s==='P')P++;else if(s==='A')A++;else if(s==='L')L++;
+    }
+    const pct=days?Math.round(P/days*100):0;
+    const ts=(att[e.id]||{})[today]||null;
+    const locked = onApprovedLeaveToday(e.id);
+    const todayBadge = locked
+      ? `<span class="badge bl_" title="Approved leave — cannot be changed">🔒 On Leave</span>`
+      : `<span class="badge ${ts==='P'?'ba':ts==='A'?'bi':ts==='L'?'bl_':''}">${ts==='P'?'Present':ts==='A'?'Absent':ts==='L'?'On Leave':'—'}</span>`;
+    const markBtns = locked
+      ? `<span style="font-size:11px;color:var(--muted);font-style:italic">Approved leave</span>`
+      : `<div class="flex gap4">
+          <button class="btn btn-green btn-sm" onclick="markAtt('${e.id}','P','${today}')">P</button>
+          <button class="btn btn-red btn-sm" onclick="markAtt('${e.id}','A','${today}')">A</button>
+          <button class="btn btn-ghost btn-sm" onclick="markAtt('${e.id}','L','${today}')">L</button>
+        </div>`;
     return `<tr>
       <td><span class="ava">${(e.fn[0]+e.ln[0]).toUpperCase()}</span><span class="emp-name">${e.fn} ${e.ln}</span></td>
       <td><span class="badge bd">${e.dept}</span></td>
-      <td class="mono" style="color:#4ade80">${P}</td><td class="mono" style="color:#f87171">${A}</td><td class="mono" style="color:#fde047">${L}</td>
+      <td class="mono" style="color:#4ade80">${P}</td>
+      <td class="mono" style="color:#f87171">${A}</td>
+      <td class="mono" style="color:#fde047">${L}</td>
       <td><div style="font-size:11px;font-family:'Courier New',monospace">${pct}%</div><div class="prog"><div class="prog-fill" style="width:${pct}%"></div></div></td>
-      <td><span class="badge ${ts==='P'?'ba':ts==='A'?'bi':ts==='L'?'bl_':''}">${ts==='P'?'Present':ts==='A'?'Absent':ts==='L'?'On Leave':'—'}</span></td>
-      <td><div class="flex gap4">
-        <button class="btn btn-green btn-sm" onclick="markAtt('${e.id}','P','${today}')">P</button>
-        <button class="btn btn-red btn-sm" onclick="markAtt('${e.id}','A','${today}')">A</button>
-        <button class="btn btn-ghost btn-sm" onclick="markAtt('${e.id}','L','${today}')">L</button>
-      </div></td>
+      <td>${todayBadge}</td>
+      <td>${markBtns}</td>
     </tr>`;
   }).join('');
 }
-function markAtt(id,s,d){if(CR!=='admin'){toast('Admin only','e');return;}const att=DB.get('att')||{};if(!att[id])att[id]={};att[id][d]=s;DB.set('att',att);renderAtt();toast(`Marked ${s==='P'?'Present':s==='A'?'Absent':'Leave'}`,'s');}
+
+function markAtt(id,s,d){
+  if(CR!=='admin'){toast('Admin only','e');return;}
+  // Block manual override if the date falls within an approved leave
+  if(isApprovedLeaveDate(id, d)){
+    toast('Cannot override — employee has an approved leave on this date','e');
+    return;
+  }
+  const att=DB.get('att')||{};
+  if(!att[id])att[id]={};
+  att[id][d]=s;
+  DB.set('att',att);
+  renderAtt();
+  toast(`Marked ${s==='P'?'Present':s==='A'?'Absent':'Leave'}`,'s');
+}
 
 // ======= LEAVES =======
 function renderLeaves(){
-  const leaves=DB.get('leaves')||[], emps=DB.get('emps')||[];
-  const vis=CR==='admin'?leaves:leaves.filter(l=>l.empId===CU.id);
-  document.getElementById('lvP').textContent=vis.filter(l=>l.status==='Pending').length;
-  document.getElementById('lvA').textContent=vis.filter(l=>l.status==='Approved').length;
-  document.getElementById('lvR').textContent=vis.filter(l=>l.status==='Rejected').length;
-  const req=CR==='admin'?leaves.filter(l=>l.status==='Pending'):vis;
-  document.getElementById('lvReqList').innerHTML=req.length?req.map(l=>{
-    const e=emps.find(x=>x.id===l.empId)||{fn:'?',ln:''};
-    return `<div class="lv-item"><div class="ava" style="margin-right:0;flex-shrink:0">${((e.fn||'?')[0]+(e.ln||'?')[0]).toUpperCase()}</div>
-    <div class="lv-info"><div class="lv-name">${e.fn} ${e.ln} <span class="badge bp">${l.type}</span></div><div class="lv-dates">${l.from} → ${l.to} · ${l.reason}</div></div>
-    <span class="badge ${l.status==='Pending'?'bl_':l.status==='Approved'?'ba':'bi'}">${l.status}</span>
-    ${CR==='admin'&&l.status==='Pending'?`<button class="btn btn-green btn-sm" onclick="actLeave('${l.id}','Approved')">✓</button><button class="btn btn-red btn-sm" onclick="actLeave('${l.id}','Rejected')">✕</button>`:''}
-    </div>`;
-  }).join(''):'<div class="empty"><div class="empty-ico">🌴</div><div class="empty-msg">No pending requests</div></div>';
-  const sel2=document.getElementById('lvEmpSel');
-  sel2.innerHTML=emps.map(e=>`<option value="${e.id}">${e.fn} ${e.ln}</option>`).join('');
-  if(CR==='employee'){sel2.value=CU.id;sel2.disabled=true;}else sel2.disabled=false;
-  document.getElementById('lvHistList').innerHTML=vis.filter(l=>l.status!=='Pending').map(l=>{
-    const e=emps.find(x=>x.id===l.empId)||{fn:'?',ln:''};
-    return `<div class="lv-item"><div class="lv-info"><div class="lv-name">${e.fn} ${e.ln} — ${l.type}</div><div class="lv-dates">${l.from} → ${l.to} · ${l.reason}</div></div><span class="badge ${l.status==='Approved'?'ba':'bi'}">${l.status}</span></div>`;
-  }).join('')||'<div class="empty"><div class="empty-ico">📋</div><div class="empty-msg">No history</div></div>';
+  const leaves = DB.get('leaves') || [];
+  const emps   = DB.get('emps')   || [];
+
+  // What the current user can see
+  const vis = CR === 'admin' ? leaves : leaves.filter(l => l.empId === CU.id);
+
+  // Counters (scoped to visible leaves)
+  document.getElementById('lvP').textContent = vis.filter(l => l.status === 'Pending').length;
+  document.getElementById('lvA').textContent = vis.filter(l => l.status === 'Approved').length;
+  document.getElementById('lvR').textContent = vis.filter(l => l.status === 'Rejected').length;
+
+  const reqTab   = document.getElementById('lt1');
+  const applyTab = document.getElementById('lt2');
+  const histTab  = document.getElementById('lt3');
+
+  if(CR === 'admin'){
+    // Admin: Requests ✓ | Apply ✗ | History ✓
+    reqTab.classList.remove('hidden');
+    applyTab.classList.add('hidden');
+    histTab.classList.remove('hidden');
+    // If somehow on Apply tab, fall back to Requests
+    if(document.getElementById('ltc-apply').classList.contains('on')){
+      switchLTab('req','lt1');
+    }
+  } else {
+    // Employee: Requests ✗ | Apply ✓ | History ✓
+    reqTab.classList.add('hidden');
+    applyTab.classList.remove('hidden');
+    histTab.classList.remove('hidden');
+    // If employee is on Requests tab (e.g. after login), redirect to History
+    if(document.getElementById('ltc-req').classList.contains('on')){
+      switchLTab('hist','lt3');
+    }
+  }
+
+  // ---- REQUESTS TAB (Admin only) ----
+  const reqList = leaves.filter(l => l.status === 'Pending');
+  if(reqList.length === 0){
+    document.getElementById('lvReqList').innerHTML =
+      '<div class="empty"><div class="empty-ico">🌴</div><div class="empty-msg">No pending requests</div></div>';
+  } else {
+    document.getElementById('lvReqList').innerHTML = reqList.map(l => {
+      const e = emps.find(x => x.id === l.empId) || {fn:'Unknown', ln:''};
+      const initials = ((e.fn||'?')[0] + (e.ln||'?')[0]).toUpperCase();
+      return `<div class="lv-item" style="flex-wrap:wrap;gap:8px">
+        <div class="ava" style="margin-right:0;flex-shrink:0">${initials}</div>
+        <div class="lv-info" style="min-width:180px">
+          <div class="lv-name">${e.fn} ${e.ln} &nbsp;<span class="badge bp">${l.type}</span></div>
+          <div class="lv-dates">${l.from} → ${l.to}</div>
+          <div class="lv-dates" style="color:var(--dim);margin-top:2px">${l.reason}</div>
+        </div>
+        <span class="badge bl_" style="flex-shrink:0">Pending</span>
+        <button class="btn btn-green btn-sm" style="flex-shrink:0" onclick="actLeave('${l.id}','Approved')">✓ Approve</button>
+        <button class="btn btn-red btn-sm" style="flex-shrink:0" onclick="actLeave('${l.id}','Rejected')">✕ Reject</button>
+      </div>`;
+    }).join('');
+  }
+
+  // ---- APPLY TAB: employee select ----
+  const sel2 = document.getElementById('lvEmpSel');
+  if(CR === 'employee'){
+    // Only show the logged-in employee — never list other employees
+    sel2.innerHTML = `<option value="${CU.id}">${CU.fn} ${CU.ln}</option>`;
+    sel2.value = CU.id;
+    sel2.disabled = true;
+  } else {
+    // Admin: full list
+    sel2.innerHTML = emps.map(e => `<option value="${e.id}">${e.fn} ${e.ln}</option>`).join('');
+    sel2.disabled = false;
+  }
+
+  // ---- HISTORY TAB ----
+  // Admin: ALL leaves for ALL employees grouped by employee
+  // Employee: STRICTLY only their own leaves filtered by CU.id
+  if(CR === 'admin'){
+    if(leaves.length === 0){
+      document.getElementById('lvHistList').innerHTML =
+        '<div class="empty"><div class="empty-ico">📋</div><div class="empty-msg">No leave records yet</div></div>';
+    } else {
+      const grouped = {};
+      emps.forEach(e => { grouped[e.id] = { emp: e, records: [] }; });
+      leaves.forEach(l => {
+        if(grouped[l.empId]) grouped[l.empId].records.push(l);
+        else grouped[l.empId] = { emp: emps.find(x=>x.id===l.empId)||{fn:'Unknown',ln:'',id:l.empId}, records:[l] };
+      });
+      document.getElementById('lvHistList').innerHTML = Object.values(grouped)
+        .filter(g => g.records.length > 0)
+        .map(g => {
+          const e = g.emp;
+          const initials = ((e.fn||'?')[0]+(e.ln||'?')[0]).toUpperCase();
+          const total    = g.records.length;
+          const approved = g.records.filter(r=>r.status==='Approved').length;
+          const pending  = g.records.filter(r=>r.status==='Pending').length;
+          const rejected = g.records.filter(r=>r.status==='Rejected').length;
+          const rows = g.records
+            .sort((a,b) => b.from.localeCompare(a.from))
+            .map(l => {
+              const sc = l.status==='Approved'?'ba':l.status==='Pending'?'bl_':'bi';
+              return `<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;border-bottom:1px solid var(--bdr);flex-wrap:wrap">
+                <span class="badge bp" style="flex-shrink:0">${l.type}</span>
+                <span class="mono" style="font-size:11px;color:var(--dim);flex:1">${l.from} → ${l.to}</span>
+                <span style="font-size:11px;color:var(--muted);flex:2;min-width:100px">${l.reason}</span>
+                <span class="badge ${sc}" style="flex-shrink:0">${l.status}</span>
+              </div>`;
+            }).join('');
+          return `<div class="card" style="margin-bottom:12px;padding:0;overflow:hidden">
+            <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:var(--bg2);border-bottom:1px solid var(--bdr)">
+              <div class="ava" style="margin-right:0;flex-shrink:0">${initials}</div>
+              <div style="flex:1">
+                <div style="font-size:13px;font-weight:700;color:var(--text)">${e.fn} ${e.ln}</div>
+                <div style="font-size:11px;color:var(--muted);margin-top:2px">${e.dept||''} &nbsp;·&nbsp; ${total} request${total!==1?'s':''}</div>
+              </div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap">
+                <span class="badge ba">${approved} Approved</span>
+                ${pending?`<span class="badge bl_">${pending} Pending</span>`:''}
+                ${rejected?`<span class="badge bi">${rejected} Rejected</span>`:''}
+              </div>
+            </div>
+            ${rows}
+          </div>`;
+        }).join('');
+    }
+  } else {
+    // EMPLOYEE: show ALL employees' leave records (read-only, grouped by employee)
+    if(leaves.length === 0){
+      document.getElementById('lvHistList').innerHTML =
+        '<div class="empty"><div class="empty-ico">📋</div><div class="empty-msg">No leave history yet</div></div>';
+    } else {
+      const grouped = {};
+      emps.forEach(e => { grouped[e.id] = { emp: e, records: [] }; });
+      leaves.forEach(l => {
+        if(grouped[l.empId]) grouped[l.empId].records.push(l);
+        else grouped[l.empId] = { emp: emps.find(x=>x.id===l.empId)||{fn:'Unknown',ln:'',id:l.empId}, records:[l] };
+      });
+      document.getElementById('lvHistList').innerHTML = Object.values(grouped)
+        .filter(g => g.records.length > 0)
+        .map(g => {
+          const e = g.emp;
+          const initials = ((e.fn||'?')[0]+(e.ln||'?')[0]).toUpperCase();
+          const total    = g.records.length;
+          const approved = g.records.filter(r=>r.status==='Approved').length;
+          const pending  = g.records.filter(r=>r.status==='Pending').length;
+          const rejected = g.records.filter(r=>r.status==='Rejected').length;
+          const isMe = e.id === CU.id;
+          const rows = g.records
+            .sort((a,b) => b.from.localeCompare(a.from))
+            .map(l => {
+              const sc = l.status==='Approved'?'ba':l.status==='Pending'?'bl_':'bi';
+              return `<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;border-bottom:1px solid var(--bdr);flex-wrap:wrap">
+                <span class="badge bp" style="flex-shrink:0">${l.type}</span>
+                <span class="mono" style="font-size:11px;color:var(--dim);flex:1">${l.from} → ${l.to}</span>
+                <span style="font-size:11px;color:var(--muted);flex:2;min-width:100px">${l.reason}</span>
+                <span class="badge ${sc}" style="flex-shrink:0">${l.status}</span>
+              </div>`;
+            }).join('');
+          return `<div class="card" style="margin-bottom:12px;padding:0;overflow:hidden;${isMe?'border-color:var(--bdr-b)':''}">
+            <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:var(--bg2);border-bottom:1px solid var(--bdr)">
+              <div class="ava" style="margin-right:0;flex-shrink:0">${initials}</div>
+              <div style="flex:1">
+                <div style="font-size:13px;font-weight:700;color:var(--text)">${e.fn} ${e.ln} ${isMe?'<span class="badge bd" style="font-size:9px">You</span>':''}</div>
+                <div style="font-size:11px;color:var(--muted);margin-top:2px">${e.dept||''} &nbsp;·&nbsp; ${total} request${total!==1?'s':''}</div>
+              </div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap">
+                <span class="badge ba">${approved} Approved</span>
+                ${pending?`<span class="badge bl_">${pending} Pending</span>`:''}
+                ${rejected?`<span class="badge bi">${rejected} Rejected</span>`:''}
+              </div>
+            </div>
+            ${rows}
+          </div>`;
+        }).join('');
+    }
+  }
 }
 function switchLTab(t,tid){
   document.querySelectorAll('#pg-leaves .tc').forEach(x=>x.classList.remove('on'));
@@ -984,32 +1182,135 @@ function switchLTab(t,tid){
   document.getElementById(tid)?.classList.add('on');
 }
 function submitLeave(){
-  const empId=document.getElementById('lvEmpSel').value,from=document.getElementById('lvFrom').value,to=document.getElementById('lvTo').value,type=document.getElementById('lvType').value,reason=document.getElementById('lvReason').value.trim();
+  // For employees, always use their own ID regardless of dropdown state
+  const empId = CR === 'employee' ? CU.id : document.getElementById('lvEmpSel').value;
+  const from   = document.getElementById('lvFrom').value;
+  const to     = document.getElementById('lvTo').value;
+  const type   = document.getElementById('lvType').value;
+  const reason = document.getElementById('lvReason').value.trim();
+
   if(!empId||!from||!to||!reason){toast('Fill all fields','e');return;}
+  if(!from||!to||from>to){toast('Invalid date range','e');return;}
+
+  // Double-check: employee cannot submit for someone else
+  if(CR==='employee' && empId !== CU.id){toast('Cannot apply leave for another employee','e');return;}
+
   const leaves=DB.get('leaves')||[];
-  leaves.push({id:Date.now().toString(),empId,from,to,type,reason,status:'Pending'});
-  DB.set('leaves',leaves);toast('Submitted','s');renderLeaves();switchLTab('req','lt1');
+  leaves.push({id:Date.now().toString(), empId, from, to, type, reason, status:'Pending'});
+  DB.set('leaves', leaves);
+
+  // Clear the form
+  document.getElementById('lvFrom').value='';
+  document.getElementById('lvTo').value='';
+  document.getElementById('lvReason').value='';
+
+  toast('Leave request submitted','s');
+  renderLeaves();
+  // Employees go to History to see their submission; Admin stays on Requests
+  if(CR==='employee') switchLTab('hist','lt3');
+  else switchLTab('req','lt1');
 }
-function actLeave(id,s){const l=(DB.get('leaves')||[]).find(x=>x.id===id);if(l)l.status=s;DB.set('leaves',DB.get('leaves'));toast(`Leave ${s.toLowerCase()}`,'s');renderLeaves();}
+function actLeave(id,s){
+  const leaves=DB.get('leaves')||[];
+  const l=leaves.find(x=>x.id===id);
+  if(!l){toast('Leave not found','e');return;}
+  l.status=s;
+  DB.set('leaves',leaves);
+
+  // Auto-update attendance records for the leave date range
+  const att=DB.get('att')||{};
+  if(!att[l.empId]) att[l.empId]={};
+  const from=new Date(l.from), to=new Date(l.to);
+  for(let d=new Date(from);d<=to;d.setDate(d.getDate()+1)){
+    const key=d.toISOString().split('T')[0];
+    if(s==='Approved'){
+      // Only mark as Leave if not already marked Present
+      if(att[l.empId][key]!=='P') att[l.empId][key]='L';
+    } else if(s==='Rejected'){
+      // Clear Leave marks that were set for this leave
+      if(att[l.empId][key]==='L') delete att[l.empId][key];
+    }
+  }
+  DB.set('att',att);
+
+  toast('Leave '+s.toLowerCase(),'s');
+  renderLeaves();
+}
 
 // ======= PAYROLL =======
+function initPayrollDropdown(){
+  const sel = document.getElementById('payMonth');
+  const now = new Date();
+  const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const currentLabel = `${MONTHS[now.getMonth()]} ${now.getFullYear()}`;
+  // Generate last 24 months up to and including current month
+  const options = [];
+  for(let i = 23; i >= 0; i--){
+    const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+    options.push(`${MONTHS[d.getMonth()]} ${d.getFullYear()}`);
+  }
+  sel.innerHTML = options.map(o =>
+    `<option${o === currentLabel ? ' selected' : ''}>${o}</option>`
+  ).join('');
+}
+
 function renderPayroll(){
-  const emps=DB.get('emps')||[], pay=DB.get('pay')||{}, month=document.getElementById('payMonth').value;
+  // Ensure dropdown is populated with current system dates before rendering
+  const sel = document.getElementById('payMonth');
+  if(!sel.options.length) initPayrollDropdown();
+  const emps=DB.get('emps')||[], pay=DB.get('pay')||{}, month=sel.value;
+
+  // Auto-mark all months before current month as Paid if not already recorded
+  const MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const now=new Date();
+  const currentLabel=`${MONTHS[now.getMonth()]} ${now.getFullYear()}`;
+  const allOptions=Array.from(sel.options).map(o=>o.value);
+  let payChanged=false;
+  allOptions.forEach(m=>{
+    if(m===currentLabel) return; // skip current month
+    emps.forEach(e=>{
+      const k=e.id+'_'+m;
+      if(!pay[k]){pay[k]='Paid'; pay[k+'_autodate']=m; payChanged=true;}
+    });
+  });
+  if(payChanged) DB.set('pay',pay);
+
+  const isPastMonth = month !== currentLabel;
+
   document.getElementById('payBody').innerHTML=emps.map(e=>{
-    const b=+e.sal,hra=Math.round(b*.4),ded=Math.round(b*.17),bon=Math.round(b*.05),net=b+hra-ded+bon,key=e.id+'_'+month,paid=pay[key]==='Paid';
+    const b=+e.sal,hra=Math.round(b*.4),ded=Math.round(b*.17),bon=Math.round(b*.05),net=b+hra-ded+bon;
+    const key=e.id+'_'+month, paid=pay[key]==='Paid';
+    const paidDate=pay[key+'_date']||null;
+    const statusBadge=paid
+      ? `<div><span class="badge ba">✓ Paid</span>${paidDate?`<div style="font-size:10px;color:var(--muted);margin-top:3px;font-family:'Courier New',monospace">${paidDate}</div>`:''}</div>`
+      : `<span class="badge bl_">Pending</span>`;
+    const actionBtn=paid
+      ? `<span style="font-size:11px;color:var(--muted);font-style:italic">—</span>`
+      : `<button class="btn btn-sm btn-blue" onclick="markPaid('${e.id}','${month}')">Pay Now</button>`;
     return `<tr>
       <td><span class="ava">${(e.fn[0]+e.ln[0]).toUpperCase()}</span><span class="emp-name">${e.fn} ${e.ln}</span></td>
       <td><span class="badge bd">${e.dept}</span></td>
-      <td class="mono">₹${b.toLocaleString()}</td><td class="mono">₹${hra.toLocaleString()}</td>
+      <td class="mono">₹${b.toLocaleString()}</td>
+      <td class="mono">₹${hra.toLocaleString()}</td>
       <td class="mono" style="color:#f87171">-₹${ded.toLocaleString()}</td>
       <td class="mono" style="color:#4ade80">+₹${bon.toLocaleString()}</td>
       <td class="mono fw7" style="color:var(--blue)">₹${net.toLocaleString()}</td>
-      <td><span class="badge ${paid?'ba':'bl_'}">${paid?'Paid':'Pending'}</span></td>
-      <td><button class="btn btn-sm ${paid?'btn-ghost':'btn-blue'}" onclick="markPaid('${e.id}','${month}')">${paid?'✓ Paid':'Pay Now'}</button></td>
+      <td>${statusBadge}</td>
+      <td>${actionBtn}</td>
     </tr>`;
   }).join('');
 }
-function markPaid(id,m){if(CR!=='admin'){toast('Admin only','e');return;}const pay=DB.get('pay')||{};pay[id+'_'+m]='Paid';DB.set('pay',pay);renderPayroll();toast('Salary paid','s');}
+
+function markPaid(id,m){
+  if(CR!=='admin'){toast('Admin only','e');return;}
+  const pay=DB.get('pay')||{};
+  const paidOn=new Date().toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'});
+  pay[id+'_'+m]='Paid';
+  pay[id+'_'+m+'_date']=paidOn;
+  DB.set('pay',pay);
+  renderPayroll();
+  toast('Salary paid','s');
+}
 
 // ======= REPORTS =======
 function renderReports(){
@@ -1066,7 +1367,6 @@ function renderReports(){
     const col=COLS[i%COLS.length];
     return `<div style="flex:1;text-align:center;font-size:9px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0" title="${d}"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${col};margin-right:3px;vertical-align:middle"></span>${d.slice(0,6)}</div>`;
   }).join('');
-
   // ---- LINE CHART (canvas) ----
   const lineCanvas=document.getElementById('rLineCanvas');
   const lw=lineCanvas.parentElement.offsetWidth||700, lh=180;
@@ -1112,7 +1412,6 @@ function renderReports(){
     });
   }
   document.getElementById('rLineLegend').innerHTML=depts.map((d,i)=>`<div class="r-line-leg-item"><div class="r-line-leg-dot" style="background:${COLS[i%COLS.length]}"></div>${d}</div>`).join('');
-
   // ---- SALARY RANGE BARS ----
   const rng={'<40K':0,'40-60K':0,'60-80K':0,'80-100K':0,'>100K':0};
   const rngCols={'<40K':'#38bdf8','40-60K':'#3b82f6','60-80K':'#a78bfa','80-100K':'#ec4899','>100K':'#f97316'};
@@ -1128,7 +1427,6 @@ function renderReports(){
       <div style="font-size:11px;font-weight:700;font-family:'Courier New',monospace;color:${col};width:16px;text-align:right">${v}</div>
     </div>`;
   }).join('');
-
   // ---- TOP EARNERS ----
   const top=[...emps].sort((a,b)=>(+b.sal)-(+a.sal)).slice(0,5);
   const medals=['🥇','🥈','🥉','4','5'];
@@ -1143,7 +1441,6 @@ function renderReports(){
       <div class="r-earner-sal">₹${(+e.sal).toLocaleString()}</div>
     </div>`).join('');
 }
-
 // ======= SETTINGS =======
 function renderSett(){
   const s=DB.get('sett')||{};
@@ -1156,8 +1453,7 @@ function renderSett(){
 function saveSett(){DB.set('sett',{comp:document.getElementById('sComp').value,ind:document.getElementById('sInd').value,eml:document.getElementById('sEml').value});toast('Saved','s');}
 function addDept(){const v=document.getElementById('newDept').value.trim();if(!v)return;const d=DB.get('depts')||[];if(d.includes(v)){toast('Already exists','e');return;}d.push(v);DB.set('depts',d);document.getElementById('newDept').value='';renderSett();toast('Added','s');}
 function delDept(i){const d=DB.get('depts')||[];d.splice(i,1);DB.set('depts',d);renderSett();toast('Removed','s');}
-function resetData(){confirm2('Reset ALL data? Cannot be undone.',()=>{['emps','depts','leaves','att','pay','sett','ctr'].forEach(k=>DB.del(k));initDB();renderDash();toast('Reset done','i');});}
-
+function resetData(){confirm2('Reset ALL data? Cannot be undone.',()=>{['emps','depts','leaves','att','pay','sett','ctr','data_ver'].forEach(k=>DB.del(k));initDB();renderDash();toast('Reset done','i');});}
 // ======= MY PROFILE / SALARY =======
 function renderMyProf(){
   if(CR!=='employee')return;
@@ -1177,12 +1473,10 @@ function renderMySal(){
   if(CR!=='employee')return;
   document.getElementById('mySalC').innerHTML=`<div class="card"><div class="card-title">Salary Breakdown</div>${salBreak(CU)}</div>`;
 }
-
 // ======= EXPORT =======
 function exportCSV(){const e=getEmps();const h=['ID','First','Last','Dept','Position','Salary','Status','Joined','Email','Phone'];const r=e.map(x=>[x.id,x.fn,x.ln,x.dept,x.pos,x.sal,x.stat,x.joined,x.email,x.phone]);dl('employees.csv',[h,...r].map(row=>row.map(v=>`"${v||''}"`).join(',')).join('\n'));toast('Exported','s');}
 function exportPayCSV(){const e=DB.get('emps')||[];const h=['ID','Name','Base','Net'];const r=e.map(x=>[x.id,`${x.fn} ${x.ln}`,x.sal,+x.sal+Math.round(+x.sal*.4)-Math.round(+x.sal*.17)+Math.round(+x.sal*.05)]);dl('payroll.csv',[h,...r].map(row=>row.map(v=>`"${v||''}"`).join(',')).join('\n'));toast('Exported','s');}
 function dl(n,c){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([c],{type:'text/csv'}));a.download=n;a.click();}
-
 // ======= MODAL HELPERS =======
 function openOv(id){document.getElementById(id).classList.add('on');}
 function closeOv(id){document.getElementById(id).classList.remove('on');}
@@ -1190,12 +1484,17 @@ document.querySelectorAll('.overlay').forEach(o=>o.addEventListener('click',e=>{
 function confirm2(msg,cb){document.getElementById('confMsg').textContent=msg;document.getElementById('confOk').onclick=()=>{closeOv('confOv');cb();};openOv('confOv');}
 function askDel(id){const e=(DB.get('emps')||[]).find(x=>x.id===id);if(!e)return;confirm2(`Delete ${e.fn} ${e.ln}?`,()=>{DB.set('emps',(DB.get('emps')||[]).filter(x=>x.id!==id));renderEmpTable();renderDash();toast('Deleted','s');});}
 function switchET(t,tid){document.querySelectorAll('#empOv .tc').forEach(x=>x.classList.remove('on'));document.querySelectorAll('#empOv .tab').forEach(x=>x.classList.remove('on'));document.getElementById('etc-'+t)?.classList.add('on');document.getElementById(tid)?.classList.add('on');}
-
 // ======= TOAST =======
 function toast(msg,type='i'){const icons={s:'✅',e:'❌',i:'ℹ️'};const el=document.createElement('div');el.className=`toast ${type}`;el.innerHTML=`<span>${icons[type]||'ℹ️'}</span><span>${msg}</span>`;document.getElementById('toasts').appendChild(el);setTimeout(()=>el.remove(),3000);}
-
 // ======= INIT =======
-window.addEventListener('load',()=>{const d=new Date();const el=document.getElementById('attMonth');if(el)el.value=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;});
+window.addEventListener('load', () => {
+  const now = new Date();
+  // Set attendance month picker to current system month
+  const attEl = document.getElementById('attMonth');
+  if(attEl) attEl.value = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+  // Populate payroll dropdown with real months based on system date
+  initPayrollDropdown();
+});
 </script>
 </body>
 </html>
